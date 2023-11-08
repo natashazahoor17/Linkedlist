@@ -1,0 +1,23 @@
+from utils import LinkedList
+
+
+ll_obj = LinkedList()
+print(f"Add nodes : ")
+ll_obj.add_at_start("second")
+ll_obj.add_at_start("first")
+ll_obj.add_at_end("third")
+ll_obj.add_at_end("sixth")
+ll_obj.add_at_index("five", 3)
+ll_obj.display()
+print(f"Update value at index 3 : ")
+ll_obj.update_at_index("fifth", 3)
+ll_obj.display()
+print(f"Remove value from start : ")
+ll_obj.remove_at_start()
+ll_obj.display()
+print(f"Remove value at the end : ")
+ll_obj.remove_at_end()
+ll_obj.display()
+print(f"Remove value at index 1 : ")
+ll_obj.remove_at_index(1)
+ll_obj.display()
